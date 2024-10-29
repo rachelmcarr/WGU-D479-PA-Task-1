@@ -1,0 +1,238 @@
+body {
+    font-family: "century gothic", sans-serif;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    background-color: black;
+    color: white;
+}
+
+.primaryNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.primaryNav h2 {
+    padding-left: 20px;
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.primaryNav .navLinks {
+    display: flex;
+    gap: 20px;
+}
+
+.primaryNav a {
+    text-transform: uppercase;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.primaryNav button {
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    padding: 5px 15px;
+    margin: 5px;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.primaryNav a:hover,
+.primaryNav button:hover {
+    font-weight: bold;
+    background-color: #03adcf;
+    border: 1px solid white;
+}
+
+.homeImage img,
+.planeImage img {
+    width: 100%;
+    height: auto;
+}
+
+
+.homeMain,
+.experienceMain,
+.transportMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+}
+
+.transportToTaniti, .transportInTaniti, .homeContent {
+    max-width: 600px;
+    margin-bottom: 10px;
+}
+
+.homeContent h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.learnMore {
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    padding: 5px 15px;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.learnMore:hover {
+    background-color: #03adcf;
+}
+
+.homeGallery,
+.experienceGallery,
+.transportGallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 20px;
+}
+
+.transportGallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    width: 50%;
+    max-width: 1000px;
+    margin-top: 20px;
+}
+
+.homeGallery img,
+.experienceGallery img,
+.transportGallery img,
+.planeImage img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid;
+    transition: transform 0.3s;
+}
+
+.homeGallery img:hover,
+.experienceGallery img:hover,
+.transportGallery img:hover,
+.planeImage img:hover {
+    transform: scale(1.05);
+}
+
+.question {
+    font-weight: bold;
+    margin: 20px;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+.answer {
+    margin-left: 50px; 
+}
+
+.faqTitle {
+    margin: 75px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.experienceTitle,
+.transportTitle {
+    text-align: center;
+    padding: 50px;
+    background-color: black;
+}
+
+.transportTitle {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 0;
+    background-color: black;
+    font-size: 1.6em;
+}
+
+.experienceTitle h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.experienceTitle p {
+    font-size: 1.2em;
+    color: white;
+}
+
+.entertainment,
+.sightseeing,
+.food {
+    max-width: 700px;
+    margin: 20px, auto;
+    background-color: black;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+ul {
+    text-align: left;
+}
+
+.entertainment h3,
+.sightseeing h3,
+.food h3 {
+    font-size: 1.8em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+figure {
+    position: relative;
+    overflow: hidden;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    opacity: 0;
+    transform: translateY(1.05);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    color: black;
+    font-size: 0.75em;
+    font-weight: bold;
+
+}
+
+figure:hover img {
+    transform: scale(1.05);
+    filter: blur(3px);
+}
+
+figure:hover figcaption {
+    opacity: 1;
+    transform: translateY(0);
+}
